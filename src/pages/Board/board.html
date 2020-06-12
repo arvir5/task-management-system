@@ -1,0 +1,32 @@
+
+<div class='page-header'>
+    <div class='header-title'>
+        Board
+    </div>
+    <div id='header-buttons'>
+        <button id='new-issue' onclick='openNewIssueModal()'>New Issue</button>
+    </div>
+</div>
+<hr class='header-content-seperator'>
+<div id='page-body' class='page-body'>
+    <div class='board-box'>
+        <div class='board-box-title'>To Do</div>
+        <ul id="todo-issues" class='issue-drag-box' ondragstart='onDragStart(event)' ondragover='onDragOver(event)'
+            ondrop='onDrop(event)'></ul>
+    </div>
+    <div class='board-box'>
+        <div class='board-box-title'>In Progress</div>
+        <ul id='progress-issues' class='issue-drag-box' ondragstart='onDragStart(event)' ondragover='onDragOver(event)'
+            ondrop='onDrop(event)'></ul>
+    </div>
+    <div class='board-box'>
+        <div class='board-box-title'>Done</div>
+        <ul id='done-issues' class='issue-drag-box' ondragstart='onDragStart(event)' ondragover='onDragOver(event)'
+            ondrop='onDrop(event)'></ul>
+    </div>
+    <div class='board-box'>
+        <div class='board-box-title'>QA</div>
+        <ul id='qa-issues' class='issue-drag-box' ondragstart='onDragStart(event)' ondragover='onDragOver(event)'
+            ondrop='onDrop(event)'></ul>
+    </div>
+</div>

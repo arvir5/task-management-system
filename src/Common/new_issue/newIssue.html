@@ -1,0 +1,35 @@
+<dialog id='new-issue-modal' class='new-issue-modal'>
+    <div class='modal-title'>
+        New Issue
+    </div>
+    <div class='modal-content'>
+        <form id='new_issue_form' method='dialog'>
+            <p class='modal-content-item'>
+                Title
+                <input id='new_issue_title' type='text' maxlength='100' placeholder='Issue title (100 characters max.)'>
+            </p>
+            <p class='modal-content-item'>
+                Status
+                <select id='new_issue_status' placeholder='Title for issue'>
+                    <option value='todo'> To Do </option>
+                    <option value='progress'> In Progress </option>
+                    <option value='done'> Done </option>
+                    <option value='qa'> QA </option>
+                </select>
+            </p>
+            <p class='modal-content-item'>
+                Assignee
+                <select id='new_issue_assignee'> </select>
+            </p>
+            <p class='modal-content-description'>
+                Description &nbsp;
+                <textarea id='new_issue_description' type='text' class='modal-textarea'
+                    placeholder='Enter description of the issue'></textarea>
+            </p>
+            <button id='new_issue_form_close' type='close' onclick='newIssueModalReset()'> Cancel </button>
+        </form>
+        <button id='new_issue_form_submit' type='submit' onclick='createNewIssue()'> Create </button>
+
+    </div>
+
+</dialog>

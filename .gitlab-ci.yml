@@ -1,0 +1,14 @@
+stages:
+  - build
+  - deploy
+
+
+create production build:
+  stage: build
+  script:
+    - npm run build-prod
+
+deploy Application:
+  stage: deploy
+  script:
+    - npm start

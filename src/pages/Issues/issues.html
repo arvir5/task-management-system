@@ -1,0 +1,63 @@
+<div class='issues-main' id='issues_main'>
+    <div class='page-header'>
+        <div class='header-title'>
+            Issues
+        </div>
+        <div id='header-buttons'>
+            <button id='new-issue' onclick='openNewIssueModal123()'>New Issue</button>
+        </div>
+    </div>
+    <hr class='header-content-seperator'>
+    <div id='issues_view' class='issues_view'>
+        <div class='issues-view-list card'>
+            <div class='card-header'>
+                Recorded Issues
+            </div>
+
+            <ul id='issues-view-list'>
+            </ul>
+        </div>
+
+        <div class='issues-view-details card'>
+            <div class='card-header'>Selected Issue Details</div>
+            <div class='issues-view-details-titlebar issue-view-details-row'>
+
+                <div class='issues-view-number-title'>
+                    <div title='issue number' id='issues-view-issue-number' class='issues-view-issue-id'>Id</div>
+                    :
+                    <div title='issue title' id='issues-view-issue-title' class='issues-view-selected-title'>Title</div>
+                </div>
+                <div class='issue-status-details'>
+                    <div title='issue-status' id='issue-status-label' class='issues-view-status-label'>
+                        Status :
+                    </div>
+                    <div class='issues-view-status-display' id='issue-status-display'>N/A</div>
+                    <select id='issue-status-select' class='issue-status-select issue-details-edit-controls'>
+                        <option value='todo'>To Do</option>
+                        <option value='progress'>In Progress</option>
+                        <option value='done'>Done</option>
+                        <option value='qa'>QA</option>
+
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class='issue-view-details-row'>
+                Assignee :<select id='issues-view-assignee' placeholder='N/A' disabled='true' class='issue-view-assignee'></select>
+            </div>
+            <div class='issue-view-details-row'>
+                Description:
+                <textarea id='issues-view-description' placeholder='No description available' readonly='true'></textarea>
+            </div>
+            <div>
+                <button id='edit-issue-button'>Edit</button>
+                <button id='save-issue-button' type='submit' class='issue-details-edit-controls' onclick="saveButtonClick()">Save
+                    changes</button>
+                <button id='cancel-issue-changes-button' type='close' class='issue-details-edit-controls'
+                    onclick="cancelButtonClick()">Cancel</button>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+</div>
